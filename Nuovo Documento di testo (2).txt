@@ -1,0 +1,24 @@
+su gitbash vedi se hai python con 
+python --version
+
+
+hai creato un environment che si chiama myenv, non myvenv!!
+
+
+per far partire il venv:
+
+C:\Users\Name\djangogirls> myvenv\Scripts\activate
+
+python -m pip install --upgrade pip
+poi nel requirements abbiam messo django e facendo
+pip install -r requirements.txt
+l abbiamo installato
+
+--------------------
+
+manage.py è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer 
+Il file settings.py contiene la configurazione del tuo sito web.
+
+
+
+python manage.py makemigrations blog
