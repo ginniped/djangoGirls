@@ -6,5 +6,21 @@
 <body>
     <p>Hi Girlz &#128525; &#9829;</p>
     <p>Bada come la funziona &#128523;</p>
+    <h1>POSTS PUBBLICATI:</h1>
+    {% for post in postsByDate %}
+    <article>
+        <time>published: {{ post.published_date }}</time>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
+{% endfor %}
+
+<h1> TUTTI I POSTS:</h1>
+    {% for post in posts %}
+    <article>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </article>
+{% endfor %}
 </body>
 </html>
